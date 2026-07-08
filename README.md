@@ -9,8 +9,6 @@ vanish-laundry-website/
 ├── index.html      # All page markup (Home + Menu views)
 ├── style.css        # All styling
 ├── script.js        # Language toggle, page switching, services/offers/branches/menu data & rendering
-├── images/
-│   └── vanish-whatsapp-qr.jpeg   # WhatsApp contact QR code
 └── README.md
 ```
 
@@ -19,7 +17,7 @@ vanish-laundry-website/
 - **Bilingual toggle** — switches the whole site between Arabic (RTL) and English (LTR) instantly, no reload.
 - **Two views, one page** — Home and the full Price List live in the same `index.html` and switch via JavaScript (`showPage()`), so it works as a single static page (perfect for GitHub Pages).
 - **Full price menu** — tabbed by category (Household, Women, Men, Uni Sex, Kids, Towels, Shoes), sourced from the shop's printed brochure.
-- **WhatsApp contact** — quick-chat button plus the shop's real WhatsApp QR code.
+- **WhatsApp contact** — one-tap button that opens a chat with the shop directly.
 - **Google review link** — direct link for customers to leave a review.
 
 ## Running locally
