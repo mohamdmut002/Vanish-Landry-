@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanish Laundry | فانيش لاندري</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@500;700;800&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand" onclick="showPage('home')">
+      <div class="brand-mark"><span>🫧</span></div>
+      <div class="brand-name">
+        VANISH <span data-ar>لاندري</span><span data-en>Laundry</span>
+        <small data-ar>غسيل • كوي • تنظيف جاف</small>
+        <small data-en>Wash • Press • Dry Clean</small>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <button class="nav-link" data-page="home" onclick="showPage('home')"><span data-ar>الرئيسية</span><span data-en>Home</span></button>
+      <button class="nav-link" data-page="menu" onclick="showPage('menu')"><span data-ar>قائمة الأسعار</span><span data-en>Menu</span></button>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" onclick="toggleLang()">
+        <span data-ar>English</span><span data-en>العربية</span>
+      </button>
+      <a class="btn-wa" href="https://wa.me/971509292788" target="_blank" rel="noopener">
+        <span>💬</span><span data-ar>واتساب</span><span data-en>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HOME PAGE ============ -->
+<main id="page-home" class="page active">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>
+        <span data-ar>خدمة الساعة الواحدة متوفرة الآن</span>
+        <span data-en>One-hour service now available</span>
+      </div>
+      <h1 data-ar>نغسّل، نكوي، ونوصّلك لبسك نظيف</h1>
+      <h1 data-en>Wash. Press. Delivered fresh.</h1>
+      <p class="lead" data-ar>خدمة غسيل وتنظيف جاف في أبوظبي — استلام وتوصيل مجاني لباب بيتك، وجودة نعتمد عليها من سنين.</p>
+      <p class="lead" data-en>Full-service laundry and dry cleaning in Abu Dhabi — free pickup and delivery to your door, with quality you can count on.</p>
+      <div class="hero-ctas">
+        <a class="btn-light" href="https://wa.me/971509292788" target="_blank" rel="noopener">
+          <span>💬</span><span data-ar>تواصل عبر واتساب</span><span data-en>Chat on WhatsApp</span>
+        </a>
+        <button class="btn-outline-light" onclick="showPage('menu')">
+          <span data-ar>شاهد قائمة الأسعار</span><span data-en>View price list</span>
+        </button>
+      </div>
+    </div>
+    <div class="porthole-wrap">
+      <div class="badge-1hr">
+        <span data-ar>خدمة<br>الساعة<br>الواحدة</span>
+        <span data-en>ONE<br>HOUR<br>SERVICE</span>
+      </div>
+      <div class="porthole">
+        <div class="porthole-ring"></div>
+        <div class="bubble" style="width:22px;height:22px; top:18%; left:20%;"></div>
+        <div class="bubble" style="width:14px;height:14px; top:70%; left:24%;"></div>
+        <div class="bubble" style="width:30px;height:30px; top:64%; left:70%;"></div>
+        <div class="bubble" style="width:12px;height:12px; top:22%; left:74%;"></div>
+        <div class="porthole-core">
+          <div class="big" data-ar>جزيرة السعديات</div>
+          <div class="big" data-en>Saadiyat Island</div>
+          <div class="small" data-ar>يوميًا · 8:00 AM – 12:00 AM</div>
+          <div class="small" data-en>Daily · 8:00 AM – 12:00 AM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" style="height:70px;">
+    <path fill="#f2faf8" d="M0,32L60,37.3C120,43,240,53,360,53.3C480,53,600,43,720,42.7C840,43,960,53,1080,58.7C1200,64,1320,64,1380,64L1440,64L1440,90L0,90Z"></path>
+  </svg>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 data-ar>كل ما يحتاجه بيتك من خدمات الغسيل</h2>
+      <h2 data-en>Everything your home needs, in one laundry service</h2>
+      <p data-ar>من ملابسك اليومية إلى السجاد، والستائر، والمفروشات، نعتني بكل قطعة بعناية فائقة باستخدام أحدث المعدات وأفضل أساليب التنظيف، لنضمن لك جودة تليق بثقتك.</p>
+      <p data-en>From your everyday clothes to carpets, curtains, and upholstery, we handle every piece with the utmost care — using the latest equipment and best cleaning methods, to guarantee quality worthy of your trust.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </div>
+</section>
+
+<section id="offers">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 data-ar>عروض وملاحظات مهمة</h2>
+      <h2 data-en>Offers & important notes</h2>
+    </div>
+    <div class="offers" id="offersGrid"></div>
+  </div>
+</section>
+
+<section id="menu-cta">
+  <div class="wrap">
+    <div class="menu-cta">
+      <div class="menu-cta-copy">
+        <div class="menu-cta-icon">🧺</div>
+        <div>
+          <h3 data-ar>قائمة الأسعار الكاملة</h3>
+          <h3 data-en>Full Price List</h3>
+          <p data-ar>تفقد أسعار كل قطعة — من ملابس المنزل إلى الأحذية، بحسب الفئة اللي تناسبك.</p>
+          <p data-en>Browse pricing for every item — from household pieces to shoes, by category.</p>
+        </div>
+      </div>
+      <button class="btn-teal" onclick="showPage('menu')">
+        <span data-ar>شاهد المنيو</span><span data-en>View the menu</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="branches">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 data-ar>وين تلقانا</h2>
+      <h2 data-en>Find us</h2>
+    </div>
+    <div class="branch-grid" id="branchGrid"></div>
+  </div>
+</section>
+
+<section id="whatsapp">
+  <div class="wrap">
+    <div class="wa-section">
+      <div class="wa-copy">
+        <h2 data-ar>تواصل معنا بضغطة واحدة</h2>
+        <h2 data-en>Reach us in one tap</h2>
+        <p data-ar>امسح رمز QR باستخدام كاميرا واتساب، أو اضغط على الزر أدناه لبدء المحادثة معنا مباشرة. فريقنا جاهز لخدمتك والإجابة على جميع استفساراتك.</p>
+        <p data-en>Scan the QR code using the WhatsApp camera, or tap the button below to start chatting with us directly. Our team is ready to help and answer all your questions.</p>
+        <a class="btn-light" style="margin-top:6px;" href="https://wa.me/971509292788" target="_blank" rel="noopener">
+          <span>💬</span><span data-ar>فتح واتساب</span><span data-en>Open WhatsApp</span>
+        </a>
+      </div>
+      <div class="wa-qr-panel">
+        <div class="qr-card">
+          <img src="images/vanish-whatsapp-qr.jpeg" alt="Vanish Laundry WhatsApp QR">
+          <span data-ar>امسح الكود من كاميرا الواتساب</span>
+          <span data-en>Scan with the WhatsApp camera</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 data-ar>تقييمنا على قوقل</h2>
+      <h2 data-en>Our Google rating</h2>
+    </div>
+    <div class="review-card">
+      <div class="rating-block">
+        <div class="rating-icon">⭐</div>
+        <div class="rating-count" data-ar>قيّمنا الآن</div>
+        <div class="rating-count" data-en>Rate us now</div>
+      </div>
+      <div class="review-text">
+        <p data-ar>نشتغل على راحة كل عميل ونتابع كل ملاحظة تجينا — رأيك يساعدنا نتطور أكثر.</p>
+        <p data-en>We work on every customer's comfort and follow up on every note we get — your feedback helps us improve.</p>
+      </div>
+      <div class="review-actions">
+        <a class="btn-teal" href="https://www.google.com/search?q=vanish+landry&rlz=1C1VDKB_enAE1130AE1130&oq=vanish+&gs_lcrp=EgZjaHJvbWUqBggBECMYJzIHCAAQABiPAjIGCAEQIxgnMgYIAhAjGCcyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQgzMjYxajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener">
+          <span data-ar>أضف تقييمك</span><span data-en>Leave a review</span>
+        </a>
+        <a class="btn-ghost" href="https://www.google.com/search?sca_esv=d6d0064a5d54de7c&rlz=1C1VDKB_enAE1130AE1130&sxsrf=APpeQntSkQJXBSc2y-tXJyAQYGNkHHIdGg:1783536907326&q=vanish+laundry+%D8%A7%D9%84%D8%B9%D9%86%D9%88%D8%A7%D9%86&ludocid=14438727981330151683&sa=X&ved=2ahUKEwj47Lfe4MOVAxVOOPsDHfQLHywQ6BN6BAguEAI" target="_blank" rel="noopener">
+          <span data-ar>موقعنا على قوقل ماب</span><span data-en>View on Google Maps</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ MENU PAGE ============ -->
+<main id="page-menu" class="page">
+
+<section class="menu-hero" style="padding-bottom:46px;">
+  <div class="wrap">
+    <button class="back-link" onclick="showPage('home')">
+      <span data-ar>→ رجوع للرئيسية</span><span data-en>← Back to Home</span>
+    </button>
+    <div class="eyebrow"><span data-ar>الأسعار شاملة الضريبة</span><span data-en>All prices include VAT</span></div>
+    <h1 data-ar>قائمة الأسعار الكاملة</h1>
+    <h1 data-en>Full Price List</h1>
+    <p data-ar>اختر الفئة اللي تناسبك من التبويبات تحت، وشوف سعر كل خدمة بالتفصيل.</p>
+    <p data-en>Pick the category you need from the tabs below to see detailed pricing for every service.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="menu-tabs" id="menuTabs"></div>
+    <div class="menu-table-wrap">
+      <div class="menu-hint" data-ar>الأسعار بالدرهم الإماراتي (AED)</div>
+      <div class="menu-hint" data-en>Prices in UAE Dirhams (AED)</div>
+      <table id="menuTable">
+        <thead><tr id="menuHeadRow"></tr></thead>
+        <tbody id="menuBody"></tbody>
+      </table>
+    </div>
+    <p class="menu-note" data-ar>* جميع الأسعار تشمل ضريبة القيمة المضافة. الأسعار مأخوذة من كتالوج المغسلة، ويمكن أن تختلف بسيط — تأكد من الفرع أو واتساب قبل التسليم.</p>
+    <p class="menu-note" data-en>* All prices include VAT. Prices are taken from the salon's printed catalog and may vary slightly — please confirm with your branch or on WhatsApp before drop-off.</p>
+
+    <div class="wa-strip">
+      <div>
+        <h3 data-ar>عندك سؤال عن سعر معين؟</h3>
+        <h3 data-en>Have a question about a price?</h3>
+        <p data-ar>راسلنا على واتساب وفريقنا يردون عليك بسرعة.</p>
+        <p data-en>Message us on WhatsApp and our team will get back to you quickly.</p>
+      </div>
+      <a class="btn-teal" href="https://wa.me/971509292788" target="_blank" rel="noopener">
+        <span>💬</span><span data-ar>تواصل معنا</span><span data-en>Contact us</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand-name" style="color:var(--teal-deep);">VANISH <span data-ar>لاندري</span><span data-en>Laundry</span></div>
+    <div>
+      <span data-ar>© جزيرة السعديات — أبوظبي</span>
+      <span data-en>© Saadiyat Island — Abu Dhabi</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
